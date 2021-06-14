@@ -57,11 +57,13 @@ export default {
                     this.tempSkill = ''
             }
         },
+        
         deleteSkill(skill) {
             this.skills = this.skills.filter((item) => {
                 return skill !== item 
             })
         },
+
         handleSubmit() {
             //validate password
             this.passwordError = this.password.length > 5 ? '' : 'Password Must be at least 6 chars long'
